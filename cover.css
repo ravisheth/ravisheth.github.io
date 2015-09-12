@@ -30,12 +30,12 @@ body {
 }
 body {
   width:320px;
-  height: 320px;
+  height:480px;
   color: #333;
   position:absolute;
   left:50%;
   top:50%;
-  margin:-320px 0 0 -160px;
+  margin:-240px 0 0 -160px;
 
 }
 
