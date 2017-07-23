@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
@@ -21,15 +21,18 @@
 
   </head>
   <body>
-    <div class="hidden-xs">
-    <h1>hi, this is ravi.<br>i live in nyc.<br>i am a phd student at columbia university.<br>sheth dot u dot ravi at gmail dot com.<br><br>
-    <a href="https://scholar.google.com/citations?user=iWQ1yIcAAAAJ">papers</a> <br>
-    </h1>
+    <div class="container-fluid">
+      <div class="col-md-4">
+        <div class="xs">
+        <h1>hi, this is ravi.<br style="line-height:5px" />
+        <br>i live in nyc.<br>
+        <br>i am a phd student at columbia university.<br>
+        <br>sheth dot u dot ravi at gmail dot com.<br><br>
+        <a href="https://scholar.google.com/citations?user=iWQ1yIcAAAAJ">papers</a> <br>
+        </h1>
+        </div>
+      </div>
     </div>
-    <div class="visible-xs">
-    <h1>this website is only viewable on a computer :)</h1>
-    </div>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -133,8 +136,8 @@
 
     function update_tiny(i) {
       if (--tinyv[i]==25) {
-        tiny[i].style.width="1px";
-        tiny[i].style.height="1px";
+        tiny[i].style.width="10px";
+        tiny[i].style.height="10px";
       }
       if (tinyv[i]) {
         tinyy[i]+=1+Math.random()*3;
